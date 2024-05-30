@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Implementa bootstrap-->
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+
+</head>
+<body>
+    <header>
+               
+        <h1 class="titulo">PRESUPUESTO</h1>
+
+                <!--date-->
+          <div>
+              <p id="fecha"></p> 
+          </div>
+
+          <div id="motoAuto">
+              <label for="moto"><input type="radio" id="moto" name="option" onclick="motoAuto()"> Moto</input></label>
+              <label for="auto"><input type="radio" id="auto" name="option" onclick="autoMoto()"> Auto</input></label>
+          </div>
+
+    </header>
+
+    <main>
+          <div class="row">
+              <div class="col">
+                  <h2 id="gestoria">GESTORIA Guille Ibarra</h2>
+                
+                  
+              <div id="contacto">
+                    <label for="cliente">Cliente<input type="text"  id="cliente" name="cliente" class="contacto" value="" autofocus></input></label><br>
+                    <label for="telefono">Teléfono<input type="phone" id="telefono" name="telefono" class="contacto" value=""></input></label>
+                    <label for="dominio">Dominio<input type="text" id="dominio" name="dominio" class="contacto" value=""></input></label>
+                    <label for="marca">Marca<input type="text" id="marca" name="marca" class="contacto"></input></label>
+                    <label for="modelo">Modelo<input type="text" id="modelo" name="modelo" class="contacto"></input></label>
+                    <label for="año">Año<input type="text" id="año" name="año" class="contacto"></input></label>
+                    <label for="tipo">Tipo<input type="text" id="tipo" name="tipo" class="contacto"></input></label>
+                    <label for="origen">Origen<input type="text" id="origen" name="origen" class="contacto"></input></label>
+                    <label for="valor">Valor<input type="text" id="valor" name="valor" class="contacto"></input></label>
+                    <label for="registro">Registro<input type="text" id="registro" name="registro" class="contacto"></input></label>
+                    <label for="observaciones">Observaciones<input type="text" id="observaciones" name="observaciones" class="contacto"></input></label>
+                </div>
+
+                
+          </div>
+      
+    <div class="col">
+        <table class="table">
+          <tbody>
+
+              <tr>
+                <th>Arancel</th>
+                <label for="arancel"></label>
+                <td>$<input type="number" id="arancel" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Sellado</th>
+                <label for="sellado"></label>
+                <td>$<input type="number" id="sellado" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Cédula</th>
+                <label for="cedula"></label>
+                <td>$<input type="number" id="cedula" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Título</th>
+                <label for="titulo"></label>
+                <td>$<input type="number" id="titulo" value="0"/></td>
+              </tr>
+              <tr>
+                <th>SUGIT</th>
+                <label for="sugit"></label>
+                <td>$<input type="number" id="sugit" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Municipio</th>
+                <label for="muni"></label>
+                <td>$<input type="number" id="muni" value="0"/></td>
+              </tr>
+              <tr>
+                <th>02</th>
+                <label for="ceroDos"></label>
+                <td>$<input type="number" id="ceroDos" value="0"/></td>
+              </tr>
+              <tr>
+                <th>04</th>
+                <label for="ceroCuatro"></label>
+                <td>$<input type="number" id="ceroCuatro" value="0"/></td>
+              </tr>
+              <tr>
+                <th>31</th>
+                <label for="31"></label>
+                <td>$<input type="number" id="31" value="0"/></td>
+              </tr>
+              <tr>
+                <th>12</th>
+                <label for="12"></label>
+                <td>$<input type="number" id="12" value="0"/></td>
+              </tr>
+              <tr>
+                <th>08</th>
+                <label for="08"></label>
+                <td>$<input type="number" id="08" value="0"/></td>
+              </tr>
+              <tr>
+                <th>59</th>
+                <label for="59"></label>
+                <td>$<input type="number" id="59" value="4500"/></td>
+              </tr>
+              <tr>
+                <th>13 x 2</th>
+                <label for="13s"></label>
+                <td>$<input type="number" id="13s" value="8136"/></td>
+              </tr>
+              <tr>
+                <th>Radicacion</th>
+                <label for="radic"></label>
+                <td>$<input type="number" id="radic" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Mora 08</th>
+                <label for="mora"></label>
+                <td>$<input type="number" id="mora" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Rehabilitacion</th>
+                <label for="rehab"></label>
+                <td>$<input type="number" id="rehab" value="0"/></td>
+              </tr>
+              <tr>
+                <th>DDJJ</th>
+                <label for="ddjj"></label>
+                <td>$<input type="number" id="ddjj" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Prenda</th>
+                <label for="prenda"></label>
+                <td>$<input type="number" id="prenda" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Honorarios</th>
+                <label for="h"></label>
+                <td>$<input type="number" id="h" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Honorarios Colega</th>
+                <label for="hColega"></label>
+                <td>$<input type="number" id="hColega" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Envío</th>
+                <label for="envio"></label>
+                <td>$<input type="number" id="envio" value="0"/></td>
+              </tr>
+              <tr>
+                <th>Legalización</th>
+                <label for="legalizacion"></label>
+                <td>$<input type="number" id="legalizacion" value="0"/></td>
+              </tr>
+              
+              <tr>
+                <th onclick="sumar()" class="total">TOTAL</th>
+                <td>$<input type="number" id="total"/></td>
+              </tr>
+
+          </tbody>
+        </table>
+      
+
+      </div>
+    
+      <button type="submit" id="boton" onclick="genPDF()">Descargar PDF</button>
+
+    </main>
+    
+</body>
+
+<script src="scripts.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
+<script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"> </script>
+
+<!--
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
+-->
+
+</html>
