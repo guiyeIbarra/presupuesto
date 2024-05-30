@@ -1,8 +1,8 @@
 
 * {
-    margin: 20px;
-    margin-top: -5px;
-    padding: 10px;
+    margin: 0px;
+    
+    padding: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;  
@@ -15,6 +15,7 @@
 
 main {
     background-color: rgba(200, 202, 200, 0.945);
+
 }
 
 header {
@@ -24,7 +25,7 @@ header {
  
 #fecha {
     position: absolute;
-    margin-top: -70px;
+    margin-top: 20px;
     margin-left: 130px;
     width: 150px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -44,9 +45,16 @@ h4 {
 }
 
 .col {
+    
     text-align: center;
     font-weight: 900;
     margin: 60px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        background-color: chartreuse;
+    }
 }
 
 .contacto {
@@ -57,8 +65,7 @@ h4 {
 
 #motoAuto {
     position: absolute;
-    margin-top: -100px;
-    margin-left: 800px;
+    
 }
 
 .table {
@@ -102,7 +109,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 15px;
     background-color: rgb(205, 205, 235);
     width: 200px;
-    margin-left: 530px;
+    
 }
 
 #boton:hover {
