@@ -26,7 +26,7 @@
         <h4 id="gestoria">GESTORIA Guille Ibarra</h4>
         
           <div class="row">
-            <div class="col">                   
+            <div class="col-6">                   
               <div id="contacto">
                     <label for="cliente">Cliente<input type="text"  id="cliente" name="cliente" class="contacto" value="" autofocus></input></label><br>
                     <label for="telefono">Teléfono<input type="phone" id="telefono" name="telefono" class="contacto" value=""></input></label>
@@ -39,10 +39,8 @@
                     <label for="valor">Valor<input type="number" id="valor" name="valor" class="contacto" value="$"></input></label>
                     <label for="registro">Registro<input type="text" id="registro" name="registro" class="contacto"></input></label>
                     <label for="observaciones">Observaciones<input type="text" id="observaciones" name="observaciones" class="contacto"></input></label>
-                </div>
-
-                
-          </div>
+                </div>                
+          </div>  <br><br>
 
           <div class="motoAuto">
             <label for="moto"><input type="radio" id="moto" name="option" onclick="motoAuto()"> Moto</input></label>
@@ -171,14 +169,15 @@
 
           </tbody>
         </table>
-      
-
-      </div>
     
-      <button type="submit" id="boton" onclick="genPDF()">Descargar PDF</button>
+       <br>
+    
+      <button class="boton" type="submit" id="boton" onclick="genPDF()">Descargar PDF</button>
+</div>
 
     </main>
     
+    <footer></footer>
 </body>
 
 <script src="scripts.js"></script>

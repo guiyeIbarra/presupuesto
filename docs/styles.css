@@ -43,10 +43,8 @@ h4 {
 }
 
 .col {
-    
     text-align: center;
-    font-weight: 900;
-    margin: 60px;
+    
 }
 /*
 @media (min-width: 1000px) {
@@ -67,25 +65,21 @@ h4 {
     display: flex;
     justify-content: space-around;  
 }
-/*
+
 .table {
-    font-size: 25px;
-    margin-top: -90px;
+    text-align: start;
 }
 
 input[type="text"],
-input[type="phone"] {
-    text-align: center;
-    width: 350px;
-    height: 35px;
+input[type="phone"],
+input[type="number"] {
+    text-align: end;
     border-radius: 5px;
 }
 
-input[type="number"] {
-    height: 28px;
-    width: 120px;
+.table input[type="number"] {
     text-align: end;
-    
+    width: 100%;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -98,20 +92,21 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 18px;
 }
 
-#total {
-    color: blue;
-    font-size: 18px;
-}
-
-#boton {
-    height: auto;
+.boton {
+    
+    font-size: 15px;
     text-align: center;
     border-radius: 15px;
-    background-color: rgb(205, 205, 235);
-    width: 200px;
-    
+    background-color: rgb(131, 131, 239);
+    width: 150px;
+    height: 50px;
 }
 
-#boton:hover {
+.boton:hover {
     background-color: blue;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
 }
