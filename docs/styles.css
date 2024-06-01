@@ -24,6 +24,7 @@ main {
 
 
 .titulo {
+    margin-top: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     color: blue; 
@@ -40,14 +41,14 @@ h4 {
     font-style: italic;
     text-align: center;
 }
-/*
+
 .col {
     
     text-align: center;
     font-weight: 900;
     margin: 60px;
 }
-
+/*
 @media (min-width: 1000px) {
     .titulo {
         text-align: center;
@@ -56,17 +57,17 @@ h4 {
         text-align: center;
     }
 }
-/*
+*/
 .contacto {
-    width: 300px;
     text-align: center;
     text-transform: uppercase;
 }
 
-#motoAuto {
-       
+.motoAuto {
+    display: flex;
+    justify-content: space-around;  
 }
-
+/*
 .table {
     font-size: 25px;
     margin-top: -90px;
