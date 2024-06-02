@@ -1,4 +1,4 @@
-
+ 
 // Agrega la fecha actual de manera automática
 
 document.addEventListener("DOMContentLoaded", function() {

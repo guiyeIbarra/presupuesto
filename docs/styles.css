@@ -3,7 +3,8 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;  
+    font-size: 15px; 
+    background-color: rgb(148, 233, 235); 
 }
 
 /* Elimina la barra de desplazamiento lateral 
@@ -12,13 +13,14 @@
 }
 */
 header {
-    background-color: rgba(200, 202, 200, 0.945);
+    margin-top: 20px;
+    background-color: rgba(101, 214, 240, 0.945);
     width: 100%;
 }
 
 main {
     margin: 0px;
-    background-color: rgb(220, 217, 217);
+    background-color: rgb(101, 211, 212);
     height: auto;
 }
 
@@ -27,7 +29,7 @@ main {
     margin-top: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-    color: blue; 
+    color: rgb(40, 40, 254); 
     text-align: center;
 }
 
@@ -56,40 +58,50 @@ h4 {
     }
 }
 */
-.contacto {
+#contacto {
     text-align: center;
     text-transform: uppercase;
+    margin-left: 100px;
 }
 
 .motoAuto {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-evenly;  
+    padding: 35px;
 }
 
 .table {
-    text-align: start;
+    text-align: center;
+    
 }
 
 input[type="text"],
 input[type="phone"],
 input[type="number"] {
-    text-align: end;
+    text-align: center;
     border-radius: 5px;
+    padding: 6px;
+    background-color: white;
 }
 
 .table input[type="number"] {
     text-align: end;
     width: 100%;
+    background-color: rgb(111, 223, 235);
 }
 
 input[type="number"]::-webkit-inner-spin-button {
     appearance: none;
 }
 
+.total {
+    font-size: 22px;
+    background-color: red;
+}
+
 .total:hover {
-    color: rgb(241, 30, 30);
-    background-color: rgb(227, 189, 189);
-    font-size: 18px;
+    background-color: rgb(58, 70, 211);
+    font-size: 20px;
 }
 
 .boton {
@@ -108,5 +120,5 @@ input[type="number"]::-webkit-inner-spin-button {
 
 footer {
     background-color: black;
-    height: 100px;
+    height: 80px;
 }
