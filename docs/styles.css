@@ -28,7 +28,6 @@ main {
 .titulo {
     margin-top: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
     color: rgb(40, 40, 254); 
     text-align: center;
 }
@@ -48,16 +47,40 @@ h4 {
     text-align: center;
     
 }
-/*
+
 @media (min-width: 1000px) {
-    .titulo {
-        text-align: center;
+    body {
+        margin: 0px;
+        padding: 0px;
     }
-    #fecha {
-        text-align: center;
+    #contacto {
+        display: grid;
+        align-items: center;
+        justify-items: end;
+        position: absolute;
+        margin-top: 200px;
+        width: 300px;
+        margin-left: 50%;
+    }
+    input[type="text"],
+    input[type="phone"],
+    input[type="number"]{
+        text-transform: uppercase;
+        margin: 20px;
+        width: 300px;
+    }
+    .table input{
+        margin: 6px;
+    }
+    .motoAuto {
+        margin-left: 25%;
+    }
+    .table {
+        display: flex;
+        margin-left: 60%;
     }
 }
-*/
+
 #contacto {
     text-align: center;
     text-transform: uppercase;
@@ -105,7 +128,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .boton {
-    
     font-size: 15px;
     text-align: center;
     border-radius: 15px;
@@ -120,5 +142,5 @@ input[type="number"]::-webkit-inner-spin-button {
 
 footer {
     background-color: black;
-    height: 80px;
+    height: 60px;
 }

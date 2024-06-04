@@ -88,24 +88,24 @@ function genPDF() {
    let fechaPDF = FECHA.toLocaleDateString();
 
    doc.setFontSize(13);
-   doc.setFont("helvetica", "normal", "toUpperCase");
+   doc.setFont("helvetica", "normal");
 
    doc.setFontSize(22);
    doc.text(`PRESUPUESTO`, 60, 15); 
    doc.setFontSize(11);
    doc.text(`Fecha: ${fechaPDF}`, 150, 15);
    doc.text(`GESTORIA "Guille Ibarra"`, 70, 25);
-   doc.text(`Nombre: ${cliente}`, 10, 55);
+   doc.text(`Nombre: ${cliente}`.toUpperCase(), 10, 55);
    doc.text(`Telefono: ${telefono}`, 10, 75);
-   doc.text(`Dominio: ${dominio}`, 10, 85);
-   doc.text(`Marca: ${marca}`, 10, 95);
-   doc.text(`Modelo: ${modelo}`, 10, 105);
+   doc.text(`Dominio: ${dominio}`.toUpperCase(), 10, 85);
+   doc.text(`Marca: ${marca}`.toUpperCase(), 10, 95);
+   doc.text(`Modelo: ${modelo}`.toUpperCase(), 10, 105);
    doc.text(`Año: ${año}`, 10, 125);
-   doc.text(`Tipo: ${tipo}`, 10, 135);
+   doc.text(`Tipo: ${tipo}`.toUpperCase(), 10, 135);
    doc.text(`Valor: ${valor}`, 10, 145);
-   doc.text(`Origen: ${origen}`, 10, 155);
-   doc.text(`Registro: ${registro}`, 10, 165);
-   doc.text(`Observaciones: ${observaciones}`, 10, 175);
+   doc.text(`Origen: ${origen}`.toUpperCase(), 10, 155);
+   doc.text(`Registro: ${registro}`.toUpperCase(), 10, 165);
+   doc.text(`Observaciones: ${observaciones}`.toUpperCase(), 10, 175);
 
 
    //agregar página
