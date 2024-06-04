@@ -7,11 +7,11 @@
     background-color: rgb(148, 233, 235); 
 }
 
-/* Elimina la barra de desplazamiento lateral 
+/* Elimina la barra de desplazamiento lateral */ 
 ::-webkit-scrollbar {
     display: none;
 }
-*/
+
 header {
     margin-top: 20px;
     background-color: rgba(101, 214, 240, 0.945);
@@ -48,10 +48,25 @@ h4 {
     
 }
 
-@media (min-width: 1000px) {
-    body {
-        margin: 0px;
-        padding: 0px;
+@media (min-width: 1200px) {
+    header {
+        height: 5px;
+    }
+    .titulo {
+        text-align: left;
+        margin-left: 190px;
+        position: absolute;
+        margin-top: 8%;
+    }
+    .fecha {
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 285px;
+    }
+    h4 {
+        position: absolute;
+        margin-left: 190px;
+        margin-top: 200px;
     }
     #contacto {
         display: grid;
@@ -66,8 +81,8 @@ h4 {
     input[type="phone"],
     input[type="number"]{
         text-transform: uppercase;
-        margin: 20px;
-        width: 300px;
+        margin: 25px;
+        width: 400px;
     }
     .table input{
         margin: 6px;
