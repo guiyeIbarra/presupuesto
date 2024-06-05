@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px; 
-    background-color: rgb(148, 233, 235); 
+    background-color: rgb(52, 172, 172); 
 }
 
 /* Elimina la barra de desplazamiento lateral */ 
@@ -125,7 +125,7 @@ input[type="number"] {
 .table input[type="number"] {
     text-align: end;
     width: 100%;
-    background-color: rgb(111, 223, 235);
+    background-color: rgb(167, 224, 230);
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -134,11 +134,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .total {
     font-size: 22px;
-    background-color: red;
 }
 
 .total:hover {
-    background-color: rgb(58, 70, 211);
+    background-color: rgb(58, 190, 211);
     font-size: 20px;
 }
 
@@ -147,8 +146,8 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
     border-radius: 15px;
     background-color: rgb(131, 131, 239);
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
 }
 
 .boton:hover {
@@ -156,6 +155,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(52, 172, 172);
     height: 60px;
 }

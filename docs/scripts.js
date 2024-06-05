@@ -164,7 +164,7 @@ let TOTAL = suma;
     doc.text(`Honorarios Colega: `, 120, 245), doc.text(`${honorariosColega}`, 170, 245);
     doc.text(`Envio: `, 120, 255), doc.text(`${envio}`, 170, 255);
     doc.text(`Legalizacion: `, 120, 265), doc.text(`${legalizacion}`, 170, 265);
-    doc.text(`TOTAL: `, 120, 275), doc.text(`${TOTAL}`, 170, 275);
+    doc.text(`TOTAL: `, 120, 275), doc.setTextColor(255, 0, 0), doc.setFontSize(14), doc.text(`$${TOTAL}`, 170, 275);
 
   //manejo de tablas
   //doc.autoTable({html: ".table"});
