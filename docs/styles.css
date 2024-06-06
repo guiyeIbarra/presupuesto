@@ -94,6 +94,9 @@ h4 {
         display: flex;
         margin-left: 60%;
     }
+    .marca {
+        font-size: 14px;
+    }
 }
 
 #contacto {
@@ -173,6 +176,7 @@ footer {
 
 .marca {
     position: absolute;
-    bottom: -1200px;
     left: 40px;
+    font-size: 10px;
+    margin-top: 3%;
 }
