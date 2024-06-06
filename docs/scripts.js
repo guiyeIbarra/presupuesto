@@ -49,7 +49,7 @@ let presup = [
   mora = parseFloat(document.getElementById("mora").value),
   rehab = parseFloat(document.getElementById("rehab").value),
   ddjj = parseFloat(document.getElementById("ddjj").value),
-  prenda = parseFloat(document.getElementById("prenda").value),
+  varios = parseFloat(document.getElementById("varios").value),
   honorarios = parseFloat(document.getElementById("h").value),
   honorariosColega = parseFloat(document.getElementById("hColega").value),
   envio = parseFloat(document.getElementById("envio").value),
@@ -132,7 +132,7 @@ function genPDF() {
     mora = parseFloat(document.getElementById("mora").value),
     rehab = parseFloat(document.getElementById("rehab").value),
     ddjj = parseFloat(document.getElementById("ddjj").value),
-    prenda = parseFloat(document.getElementById("prenda").value),
+    varios = parseFloat(document.getElementById("varios").value),
     honorarios = parseFloat(document.getElementById("h").value),
     honorariosColega = parseFloat(document.getElementById("hColega").value),
     envio = parseFloat(document.getElementById("envio").value),
@@ -160,7 +160,7 @@ let TOTAL = suma;
     doc.text(`Mora 08: `, 120, 195), doc.text(`${mora}`, 170, 195);
     doc.text(`Rehabilitación: `, 120, 205), doc.text(`${rehab}`, 170, 205);
     doc.text(`DDJJ: `, 120, 215), doc.text(`${ddjj}`, 170, 215);
-    doc.text(`Prenda: `, 120, 225), doc.text(`${prenda}`, 170, 225);
+    doc.text(`Varios: `, 120, 225), doc.text(`${varios}`, 170, 225);
     doc.text(`Honorarios: `, 120, 235), doc.text(`${honorarios}`, 170, 235);
     doc.text(`Honorarios Colega: `, 120, 245), doc.text(`${honorariosColega}`, 170, 245);
     doc.text(`Envio: `, 120, 255), doc.text(`${envio}`, 170, 255);
