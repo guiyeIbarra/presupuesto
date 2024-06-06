@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px; 
-    background-color: rgb(52, 172, 172); 
+    background-color: rgb(160, 220, 220); 
 }
 
 /* Elimina la barra de desplazamiento lateral */ 
@@ -14,7 +14,7 @@
 
 header {
     margin-top: 20px;
-    background-color: rgba(101, 214, 240, 0.945);
+    background-color: rgba(40, 40, 254, 0.945);
     width: 100%;
 }
 
@@ -122,10 +122,14 @@ input[type="number"] {
     background-color: white;
 }
 
+input[id='observaciones'] {
+    text-transform: none;
+}
+
 .table input[type="number"] {
     text-align: end;
     width: 100%;
-    background-color: rgb(167, 224, 230);
+    background-color: rgb(160, 220, 220);
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -133,14 +137,22 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .total {
-    font-size: 22px;
+    font-size: 12px;
+    width: 50px; 
+    margin-left: 35%; 
+    border-radius: 6px; 
+    color: black;
 }
 
 .total:hover {
-    background-color: rgb(58, 190, 211);
-    font-size: 20px;
+    background-color: rgb(36, 135, 221);
+    color: rgb(69, 67, 67);
 }
 
+#total {
+    font-size: 20px;
+    color: red;
+}
 .boton {
     font-size: 15px;
     text-align: center;
@@ -155,6 +167,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 footer {
-    background-color: rgb(52, 172, 172);
-    height: 60px;
+    background-color: rgb(160, 220, 220);
+    height: 80px;
+}
+
+.marca {
+    position: absolute;
+    bottom: -1200px;
+    left: 40px;
 }

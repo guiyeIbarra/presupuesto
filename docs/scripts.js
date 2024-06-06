@@ -59,7 +59,7 @@ let presup = [
   //utilizamos el método 'reduce' para recorrer el array y sumar sus elementos
   let suma = presup.reduce((a, b) => a + b, 0);
 
-  document.getElementById("total").value =  suma;
+  document.getElementById("total").value = suma;
   
 }
 
@@ -72,16 +72,16 @@ function genPDF() {
 
   let doc = new jsPDF();
 
-   let cliente = document.getElementById("cliente").value;
+   let cliente = document.getElementById("cliente").value.toUpperCase();
    let telefono = document.getElementById('telefono').value;
-   let dominio = document.getElementById('dominio').value;
-   let marca = document.getElementById('marca').value;
-   let modelo = document.getElementById('modelo').value;
+   let dominio = document.getElementById('dominio').value.toUpperCase();
+   let marca = document.getElementById('marca').value.toUpperCase();
+   let modelo = document.getElementById('modelo').value.toUpperCase();
    let año = document.getElementById('año').value;
-   let tipo = document.getElementById('tipo').value;
-   let origen = document.getElementById('origen').value;
+   let tipo = document.getElementById('tipo').value.toUpperCase();
+   let origen = document.getElementById('origen').value.toUpperCase();
    let valor = document.getElementById('valor').value;
-   let registro = document.getElementById('registro').value;
+   let registro = document.getElementById('registro').value.toUpperCase();
    let observaciones = document.getElementById('observaciones').value;
    
    let FECHA = new Date();
@@ -95,18 +95,19 @@ function genPDF() {
    doc.setFontSize(11);
    doc.text(`Fecha: ${fechaPDF}`, 150, 15);
    doc.text(`GESTORIA "Guille Ibarra"`, 70, 25);
-   doc.text(`Nombre: ${cliente}`.toUpperCase(), 10, 55);
+   doc.text(`Nombre: ${cliente}`, 10, 55);
    doc.text(`Telefono: ${telefono}`, 10, 75);
-   doc.text(`Dominio: ${dominio}`.toUpperCase(), 10, 85);
-   doc.text(`Marca: ${marca}`.toUpperCase(), 10, 95);
-   doc.text(`Modelo: ${modelo}`.toUpperCase(), 10, 105);
+   doc.text(`Dominio: ${dominio}`, 10, 85);
+   doc.text(`Marca: ${marca}`, 10, 95);
+   doc.text(`Modelo: ${modelo}`, 10, 105);
    doc.text(`Año: ${año}`, 10, 125);
-   doc.text(`Tipo: ${tipo}`.toUpperCase(), 10, 135);
+   doc.text(`Tipo: ${tipo}`, 10, 135);
    doc.text(`Valor: ${valor}`, 10, 145);
-   doc.text(`Origen: ${origen}`.toUpperCase(), 10, 155);
-   doc.text(`Registro: ${registro}`.toUpperCase(), 10, 165);
-   doc.text(`Observaciones: ${observaciones}`.toUpperCase(), 10, 175);
+   doc.text(`Origen: ${origen}`, 10, 155);
+   doc.text(`Registro: ${registro}`, 10, 165);
+   doc.text(`Observaciones: `, 10, 175), doc.setTextColor(230, 0, 0), doc.text(`${observaciones}`, 10, 185);
 
+   doc.setTextColor(0, 0, 0);
 
    //agregar página
      // doc.addPage();
