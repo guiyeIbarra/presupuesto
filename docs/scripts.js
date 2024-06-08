@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
   fechaElemento.textContent = fecha.toLocaleDateString();
 });
 
+let obs = document.getElementsByClassName('obs');
+
+
 function motoAuto() {
 
   let ced = document.getElementById('cedula');
@@ -105,7 +108,7 @@ function genPDF() {
    doc.text(`Valor: ${valor}`, 10, 145);
    doc.text(`Origen: ${origen}`, 10, 155);
    doc.text(`Registro: ${registro}`, 10, 165);
-   doc.text(`Observaciones: `, 10, 175), doc.setTextColor(230, 0, 0), doc.text(`${observaciones}`, 10, 185);
+   doc.text(`OBSERVACIONES: `, 10, 175), doc.setTextColor(230, 0, 0), doc.text(`${observaciones}`, 10, 185);
 
    doc.setTextColor(0, 0, 0);
 

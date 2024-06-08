@@ -105,6 +105,13 @@ h4 {
     margin-left: 100px;
 }
 
+.obs {
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .motoAuto {
     display: flex;
     justify-content: space-evenly;  
