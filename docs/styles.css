@@ -48,22 +48,27 @@ h4 {
     
 }
 
-@media (max-width: 770px) {
+@media (min-width: 700px) {
     #contacto {
         display: grid;
         align-items: center;
         justify-items: end;
-        margin-top: 50px;
-        width: 300px;
-        
+        margin-top: 30px;
+        width: 100px;
+        text-align: center;
     }
     input[type="text"],
     input[type="phone"],
     input[type="number"],
     textarea[type="text"] {
         text-transform: uppercase;
-        margin-left: 25%;
+        margin-left: 15%;
         width: 400px;
+        text-align: center;
+    }
+    .table input[type="number"] {
+        margin-left: 2px;
+        width: 2%;
     }
 }
 
@@ -125,7 +130,7 @@ h4 {
 #contacto {
     text-align: center;
     text-transform: uppercase;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 
 .obs {
@@ -201,12 +206,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 footer {
     background-color: rgb(160, 220, 220);
-    height: 80px;
+    height: 70px;
 }
 
 .marca {
     position: absolute;
     left: 40px;
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 3%;
 }
