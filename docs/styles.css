@@ -48,96 +48,6 @@ h4 {
     
 }
 
-@media (min-width: 700px) {
-    #contacto {
-        padding: 35px;
-        display: grid; 
-        justify-items: end;
-        align-items: center;
-        text-align: center;
-    }
-    input[type="text"],
-    input[type="phone"],
-    input[type="number"],
-    textarea[type="text"] {
-        text-transform: uppercase;
-        margin: 20px;
-        width: 430px;
-        text-align: center;
-    }
-    .table input[type="number"] {
-        margin-left: 2px;
-        width: 2%;
-    }
-    .marca {
-        margin-left: 300px;
-    }
-}
-
-@media (min-width: 1100px) {
-    header {
-        height: 5px;
-    }
-    .titulo {
-        text-align: left;
-        margin-left: 190px;
-        position: absolute;
-        margin-top: 8%;
-    }
-    .fecha {
-        position: absolute;
-        margin-top: 4%;
-        margin-left: 285px;
-    }
-    h4 {
-        position: absolute;
-        margin-left: 190px;
-        margin-top: 200px;
-    }
-    #contacto {
-        display: grid;
-        align-items: center;
-        justify-items: end;
-        position: absolute;
-        margin-top: 160px;
-        width: 500px;
-        margin-left: 50%;
-    }
-    input[type="text"],
-    input[type="phone"],
-    input[type="number"]{
-        text-transform: uppercase;
-        margin: 35px;
-        width: 400px;
-    }
-    input[id="marca"],
-    input[id="valor"] {
-        margin: 45px;
-    }
-    input[id="año"],
-    input[id="tipo"] {
-        margin: 50px;
-    }
-    #observaciones {
-        width: 400px;
-        margin-left: 1px;
-    }
-    .table input{
-        margin: 6px;
-    }
-    .motoAuto {
-        margin-left: 25%;
-    }
-    .table {
-        display: flex;
-        margin-left: 60%;
-    }
-    .marca {
-        font-size: 14px;
-        margin-left: 66%;
-    }
-}
-
 #contacto {
     text-align: center;
     text-transform: uppercase;
@@ -195,8 +105,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .total:hover {
-    background-color: rgb(36, 135, 221);
-    color: rgb(69, 67, 67);
+    background-color: rgb(36, 51, 221);
+    color: rgb(15, 15, 15);
 }
 
 #total {
@@ -226,4 +136,92 @@ footer {
     left: 350px;
     font-size: 13px;
     margin-top: 7%;
+}
+
+
+@media (min-width: 700px) {
+    #contacto {
+        padding: 35px;
+        display: grid; 
+        justify-items: end;
+        align-items: center;
+        text-align: center;
+        margin-left: 42%;
+    }
+    input[type="text"],
+    input[type="phone"],
+    input[type="number"],
+    textarea[type="text"] {
+        text-transform: uppercase;
+        margin: 20px;
+        width: 430px;
+        text-align: center;
+    }
+    .table input[type="number"] {
+        margin-left: 2px;
+        width: 130px;
+    }
+    .marca {
+        margin-left: 430px;
+    }
+    .total{
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 1100px) {
+    header {
+        height: 5px;
+    }
+    .titulo {
+        text-align: left;
+        margin-left: 190px;
+        position: absolute;
+        margin-top: 10%;
+    }
+    .fecha {
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 285px;
+    }
+    h4 {
+        position: absolute;
+        margin-left: 190px;
+    }
+    #contacto {
+        display: grid;
+        align-items: center;
+        justify-items: end;
+        position: absolute;
+        margin-top: 200px;
+        width: 500px;
+        margin-left: 5%;
+    }
+    input[type="text"],
+    input[type="phone"],
+    input[type="number"],
+    textarea[type="text"]{
+        text-transform: uppercase;
+        margin: 25px;
+        width: 400px;
+    }
+   
+    .table input[type="number"]{
+        margin: 6px;
+        width: 150px;
+    }
+    .motoAuto {
+        margin-left: 25%;
+    }
+    .table {
+        display: flex;
+        margin-left: 58%;
+    }
+    .total{
+        margin-left: 35%;
+    }
+    .marca {
+        font-size: 14px;
+        margin-left: 66%;
+    }
 }
