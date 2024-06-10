@@ -50,11 +50,10 @@ h4 {
 
 @media (min-width: 700px) {
     #contacto {
-        display: grid;
-        align-items: center;
+        padding: 35px;
+        display: grid; 
         justify-items: end;
-        margin-top: 30px;
-        width: 100px;
+        align-items: center;
         text-align: center;
     }
     input[type="text"],
@@ -62,17 +61,20 @@ h4 {
     input[type="number"],
     textarea[type="text"] {
         text-transform: uppercase;
-        margin-left: 15%;
-        width: 400px;
+        margin: 20px;
+        width: 430px;
         text-align: center;
     }
     .table input[type="number"] {
         margin-left: 2px;
         width: 2%;
     }
+    .marca {
+        margin-left: 300px;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     header {
         height: 5px;
     }
@@ -97,16 +99,24 @@ h4 {
         align-items: center;
         justify-items: end;
         position: absolute;
-        margin-top: 200px;
-        width: 300px;
+        margin-top: 160px;
+        width: 500px;
         margin-left: 50%;
     }
     input[type="text"],
     input[type="phone"],
     input[type="number"]{
         text-transform: uppercase;
-        margin: 25px;
+        margin: 35px;
         width: 400px;
+    }
+    input[id="marca"],
+    input[id="valor"] {
+        margin: 45px;
+    }
+    input[id="año"],
+    input[id="tipo"] {
+        margin: 50px;
     }
     #observaciones {
         width: 400px;
@@ -124,17 +134,18 @@ h4 {
     }
     .marca {
         font-size: 14px;
+        margin-left: 66%;
     }
 }
 
 #contacto {
     text-align: center;
     text-transform: uppercase;
-    margin-left: 110px;
+    margin-left: 70px;
 }
 
 .obs {
-    width: 215px;
+    width: 300px;
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -158,6 +169,7 @@ input[type="number"] {
     border-radius: 5px;
     padding: 6px;
     background-color: white;
+    width: 300px;
 }
 
 input[id='observaciones'] {
@@ -206,12 +218,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 footer {
     background-color: rgb(160, 220, 220);
-    height: 70px;
+    height: 50px;
 }
 
 .marca {
     position: absolute;
-    left: 40px;
+    left: 350px;
     font-size: 13px;
-    margin-top: 3%;
+    margin-top: 7%;
 }
