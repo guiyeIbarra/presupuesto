@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px; 
+    font-size: 18px; 
     background-color: rgb(160, 220, 220); 
 }
 
@@ -209,7 +209,7 @@ footer {
         position: absolute;
         margin-top: 200px;
         width: 500px;
-        margin-left: 5%;
+        margin-left: 7%;
     }
     input[type="text"],
     input[type="phone"],
