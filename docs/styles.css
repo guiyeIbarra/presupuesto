@@ -4,6 +4,7 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px; 
+    font-weight: 700;
     background-color: rgb(160, 220, 220); 
 }
 
@@ -90,6 +91,8 @@ input[id='observaciones'] {
     text-align: end;
     width: 100px;
     background-color: rgb(160, 220, 220);
+    margin: 1px;
+    padding: 10px;
 }
 
 .table th {
@@ -173,9 +176,11 @@ footer {
     .table input[type="number"] {
         margin-left: 2px;
         width: 180px;
+        margin: 10px;
+        padding: 6px;
     }
     .marca {
-        margin-left: 430px;
+        margin-left: 330px;
     }
     .total{
         margin-left: 50px;
@@ -219,9 +224,9 @@ footer {
         margin: 25px;
         width: 400px;
     }
-   
     .table input[type="number"]{
-        margin: 6px;
+        margin: 5px;
+        padding: 8px;
         width: 150px;
     }
     .motoAuto {
