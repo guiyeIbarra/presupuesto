@@ -148,7 +148,7 @@ footer {
         justify-items: end;
         align-items: center;
         text-align: center;
-        margin-left: 30%;
+        margin-left: 45%;
     }
     input[type="text"],
     input[type="phone"],
@@ -176,7 +176,7 @@ footer {
         justify-content: center;
     }
     .total{
-        margin-left: 210px;
+        margin-left: 256px;
         margin-top: 5%;
     }
     .marca {
@@ -197,7 +197,7 @@ footer {
     .fecha {
         position: absolute;
         margin-top: 4%;
-        margin-left: 300px;
+        margin-left: 310px;
     }
     h4 {
         position: absolute;
