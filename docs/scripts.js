@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let obs = document.getElementsByClassName('obs');
 
+/*   FUNCION SUSPENDIDAD PORQUE SE QUITARON LOS VALORES DE TITULO Y CEDULA
+
 
 function motoAuto() {
 
@@ -31,6 +33,8 @@ function autoMoto() {
     tit.value = 2580;
     sug.value = 650;
 };
+
+*/
 
 function sumar() {
 
@@ -146,6 +150,7 @@ let suma = presup.reduce((a, b) => a + b, 0);
 
 let TOTAL = suma;
       
+
     doc.text(`Arancel: `, 120, 55), doc.text(`${arancel}`, 170, 55);
     doc.text(`Sellado: `, 120, 65), doc.text(`${sellado}`, 170, 65);
     doc.text(`Cedula: `, 120, 75), doc.text(`${cedula}`, 170, 75);
