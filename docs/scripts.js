@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let obs = document.getElementsByClassName('obs');
 
-/*   FUNCION SUSPENDIDAD PORQUE SE QUITARON LOS VALORES DE TITULO Y CEDULA
-
 
 function motoAuto() {
 
@@ -18,8 +16,8 @@ function motoAuto() {
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
 
-    ced.value = 2040;
-    tit.value = 1850; 
+   // ced.value = 2040;
+   // tit.value = 1850; 
     sug.value = 505;
 };
 
@@ -29,12 +27,11 @@ function autoMoto() {
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
 
-    ced.value = 5290;
-    tit.value = 2580;
+   // ced.value = 5290;
+   // tit.value = 2580;
     sug.value = 650;
 };
 
-*/
 
 function sumar() {
 
