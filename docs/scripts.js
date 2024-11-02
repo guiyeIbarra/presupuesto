@@ -15,7 +15,18 @@ function motoAuto() {
   let ced = document.getElementById('cedula');
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
+  let arancelMoto = document.getElementById('valor').value;
+  let selladoMoto = document.getElementById('valor').value;
 
+  totalMoto = arancelMoto * 0.01;
+  totalSelladoMoto = selladoMoto * 0.03;
+  //arancel.value = totalMoto; 
+  sellado.value = totalSelladoMoto;
+  if(totalMoto > 6000) {
+    arancel.value = totalMoto;
+  } else {
+    arancel.value = 6000;
+  }
    // ced.value = 2040;
    // tit.value = 1850; 
     sug.value = 505;
@@ -26,7 +37,19 @@ function autoMoto() {
   let ced = document.getElementById('cedula');
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
+  let arancelAuto = document.getElementById('valor').value;
+  let selladoAuto = document.getElementById('valor').value;
 
+  totalAuto = arancelAuto * 0.01;
+  totalSelladoAuto = selladoAuto * 0.03;
+  //arancel.value = totalAuto; 
+  sellado.value = totalSelladoAuto;
+  if(totalAuto > 13100) {
+    arancel.value = totalAuto;
+  } else {
+    arancel.value = 13100;
+  }
+   
    // ced.value = 5290;
    // tit.value = 2580;
     sug.value = 650;
