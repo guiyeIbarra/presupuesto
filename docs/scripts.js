@@ -21,9 +21,9 @@ function motoAuto() {
   totalMoto = arancelMoto * 0.01;
   totalSelladoMoto = selladoMoto * 0.03;
   //arancel.value = totalMoto; 
-  sellado.value = totalSelladoMoto;
+  sellado.value = Math.floor(totalSelladoMoto + 450);
   if(totalMoto > 6000) {
-    arancel.value = totalMoto;
+    arancel.value = Math.floor(totalMoto);
   } else {
     arancel.value = 6000;
   }
@@ -43,9 +43,9 @@ function autoMoto() {
   totalAuto = arancelAuto * 0.01;
   totalSelladoAuto = selladoAuto * 0.03;
   //arancel.value = totalAuto; 
-  sellado.value = totalSelladoAuto;
+  sellado.value = Math.floor(totalSelladoAuto + 450);
   if(totalAuto > 13100) {
-    arancel.value = totalAuto;
+    arancel.value = Math.floor(totalAuto);
   } else {
     arancel.value = 13100;
   }
@@ -119,20 +119,45 @@ function genPDF() {
 
    doc.setFontSize(22);
    doc.text(`PRESUPUESTO`, 60, 15); 
+   doc.line(0, 47, 220, 47);
+
    doc.setFontSize(11);
    doc.text(`Fecha: ${fechaPDF}`, 150, 15);
    doc.text(`GESTORIA "Guille Ibarra"`, 70, 25);
+
    doc.text(`Nombre: ${cliente}`, 10, 55);
+     doc.line(0, 70, 90, 70);
+
    doc.text(`Telefono: ${telefono}`, 10, 75);
+     doc.line(0, 80, 90, 80);
+
    doc.text(`Dominio: ${dominio}`, 10, 85);
+     doc.line(0, 90, 90, 90)
+
    doc.text(`Marca: ${marca}`, 10, 95);
+     doc.line(0, 100, 90, 100);
+
    doc.text(`Modelo: ${modelo}`, 10, 105);
+     doc.line(0, 120, 90, 120);
+
    doc.text(`Año: ${año}`, 10, 125);
+     doc.line(0, 130, 90, 130);
+
    doc.text(`Tipo: ${tipo}`, 10, 135);
+    doc.line(0, 140, 90, 140);
+       
    doc.text(`Valor: ${valor}`, 10, 145);
+    doc.line(0, 150, 90, 150);
+
    doc.text(`Origen: ${origen}`, 10, 155);
+    doc.line(0, 160, 90, 160);
+     
    doc.text(`Registro: ${registro}`, 10, 165);
+    doc.line(0, 170, 90, 170);
+
    doc.text(`OBSERVACIONES: `, 10, 175), doc.setTextColor(230, 0, 0), doc.text(`${observaciones}`, 10, 185);
+    doc.line(0, 220, 90, 220);
+    
 
    doc.setTextColor(0, 0, 0);
 
@@ -165,13 +190,18 @@ function genPDF() {
     envio = parseFloat(document.getElementById("envio").value),
     legalizacion = parseFloat(document.getElementById("legalizacion").value),
 ]
+ 
+
 
 let suma = presup.reduce((a, b) => a + b, 0);
 
 let TOTAL = suma;
-      
+
+
 
     doc.text(`Arancel: `, 120, 55), doc.text(`${arancel}`, 170, 55);
+    
+
     doc.text(`Sellado: `, 120, 65), doc.text(`${sellado}`, 170, 65);
     doc.text(`Cedula: `, 120, 75), doc.text(`${cedula}`, 170, 75);
     doc.text(`Título: `, 120, 85), doc.text(`${titulo}`, 170, 85);
@@ -193,7 +223,7 @@ let TOTAL = suma;
     doc.text(`Honorarios Colega: `, 120, 245), doc.text(`${honorariosColega}`, 170, 245);
     doc.text(`Envio: `, 120, 255), doc.text(`${envio}`, 170, 255);
     doc.text(`Legalizacion: `, 120, 265), doc.text(`${legalizacion}`, 170, 265);
-    doc.text(`TOTAL: `, 120, 275), doc.setTextColor(255, 0, 0), doc.setFontSize(14), doc.text(`$${TOTAL}`, 170, 275);
+    doc.text(`TOTAL: `, 120, 275), doc.setTextColor(255, 0, 0), doc.setFontSize(14), doc.text(`$ ${TOTAL}`, 170, 275);
 
   //manejo de tablas
   //doc.autoTable({html: ".table"});
