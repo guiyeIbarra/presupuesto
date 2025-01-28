@@ -15,8 +15,8 @@ function motoAuto() {
   let ced = document.getElementById('cedula');
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
-  let arancelMoto = document.getElementById('valor').value;
-  let selladoMoto = document.getElementById('valor').value;
+  let arancelMoto = document.getElementById('valorRegistro').value;
+  let selladoMoto = document.getElementById('valorAcara').value;
 
   totalMoto = arancelMoto * 0.01;
   totalSelladoMoto = selladoMoto * 0.03;
@@ -37,8 +37,8 @@ function autoMoto() {
   let ced = document.getElementById('cedula');
   let tit = document.getElementById('titulo');
   let sug = document.getElementById('sugit');
-  let arancelAuto = document.getElementById('valor').value;
-  let selladoAuto = document.getElementById('valor').value;
+  let arancelAuto = document.getElementById('valorRegistro').value;
+  let selladoAuto = document.getElementById('valorAcara').value;
 
   totalAuto = arancelAuto * 0.01;
   totalSelladoAuto = selladoAuto * 0.03;
@@ -107,7 +107,7 @@ function genPDF() {
    let año = document.getElementById('año').value;
    let tipo = document.getElementById('tipo').value.toUpperCase();
    let origen = document.getElementById('origen').value.toUpperCase();
-   let valor = document.getElementById('valor').value;
+   let valor = document.getElementById('valorRegistro').value;
    let registro = document.getElementById('registro').value.toUpperCase();
    let observaciones = document.getElementById('observaciones').value;
    
@@ -146,7 +146,7 @@ function genPDF() {
    doc.text(`Tipo: ${tipo}`, 10, 135);
     doc.line(0, 140, 90, 140);
        
-   doc.text(`Valor: ${valor}`, 10, 145);
+   doc.text(`Valor Registro: ${valor}`, 10, 145);
     doc.line(0, 150, 90, 150);
 
    doc.text(`Origen: ${origen}`, 10, 155);
