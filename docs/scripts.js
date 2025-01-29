@@ -106,8 +106,8 @@ function genPDF() {
    let modelo = document.getElementById('modelo').value.toUpperCase();
    let año = document.getElementById('año').value;
    let tipo = document.getElementById('tipo').value.toUpperCase();
-   let origen = document.getElementById('origen').value.toUpperCase();
-   let valor = document.getElementById('valorRegistro').value;
+   let valorAcara = document.getElementById('valorAcara').value.toUpperCase();
+   let valorRegistro = document.getElementById('valorRegistro').value;
    let registro = document.getElementById('registro').value.toUpperCase();
    let observaciones = document.getElementById('observaciones').value;
    
@@ -146,10 +146,10 @@ function genPDF() {
    doc.text(`Tipo: ${tipo}`, 10, 135);
     doc.line(0, 140, 90, 140);
        
-   doc.text(`Valor Registro: ${valor}`, 10, 145);
+   doc.text(`Valor ACARA: ${valorAcara}`, 10, 145);
     doc.line(0, 150, 90, 150);
 
-   doc.text(`Origen: ${origen}`, 10, 155);
+   doc.text(`Valor Registro: ${valorRegistro}`, 10, 155);
     doc.line(0, 160, 90, 160);
      
    doc.text(`Registro: ${registro}`, 10, 165);
