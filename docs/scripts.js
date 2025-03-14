@@ -43,7 +43,7 @@ function autoMoto() {
   totalAuto = arancelAuto * 0.01;
   totalSelladoAuto = selladoAuto * 0.03;
   //arancel.value = totalAuto; 
-  sellado.value = Math.floor(totalSelladoAuto + 450);
+  sellado.value = Math.floor(totalSelladoAuto + 900);
   if(totalAuto > 13100) {
     arancel.value = Math.floor(totalAuto);
   } else {
@@ -98,7 +98,7 @@ function genPDF() {
 
 
   let doc = new jsPDF();
-
+   
    let cliente = document.getElementById("cliente").value.toUpperCase();
    let telefono = document.getElementById('telefono').value;
    let dominio = document.getElementById('dominio').value.toUpperCase();
@@ -123,7 +123,7 @@ function genPDF() {
 
    doc.setFontSize(11);
    doc.text(`Fecha: ${fechaPDF}`, 150, 15);
-   doc.text(`GESTORIA "Guille Ibarra"`, 70, 25);
+   doc.text(`GESTORIA Guille Ibarra`, 70, 25);
 
    doc.text(`Nombre: ${cliente}`, 10, 55);
      doc.line(0, 70, 90, 70);

@@ -43,6 +43,12 @@ h4 {
     text-align: center;
 }
 
+#fantasia {
+    width: 250px;
+    height: 50px;
+    font-size: 12px;
+}
+
 .col {
     text-align: center;
     
@@ -204,6 +210,8 @@ footer {
         margin-left: 190px;
         position: absolute;
         margin-top: 8%;
+        letter-spacing: 5px;
+        margin-left: 160px;
     }
     .fecha {
         position: absolute;
