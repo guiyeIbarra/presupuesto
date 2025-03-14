@@ -21,7 +21,7 @@ function motoAuto() {
   totalMoto = arancelMoto * 0.01;
   totalSelladoMoto = selladoMoto * 0.03;
   //arancel.value = totalMoto; 
-  sellado.value = Math.floor(totalSelladoMoto + 450);
+  sellado.value = Math.floor(totalSelladoMoto + 900);
   if(totalMoto > 6000) {
     arancel.value = Math.floor(totalMoto);
   } else {
