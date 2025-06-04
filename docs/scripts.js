@@ -21,12 +21,14 @@ function motoAuto() {
   totalMoto = arancelMoto * 0.01;
   totalSelladoMoto = selladoMoto * 0.03;
   //arancel.value = totalMoto; 
-  sellado.value = Math.floor(totalSelladoMoto + 900);
+  sellado.value = Math.floor(totalSelladoMoto + 1700);
   if(totalMoto > 6000) {
     arancel.value = Math.floor(totalMoto);
   } else {
     arancel.value = 6000;
   }
+
+  
    // ced.value = 2040;
    // tit.value = 1850; 
     sug.value = 505;
@@ -43,7 +45,7 @@ function autoMoto() {
   totalAuto = arancelAuto * 0.01;
   totalSelladoAuto = selladoAuto * 0.03;
   //arancel.value = totalAuto; 
-  sellado.value = Math.floor(totalSelladoAuto + 900);
+  sellado.value = Math.floor(totalSelladoAuto + 1700);
   if(totalAuto > 13100) {
     arancel.value = Math.floor(totalAuto);
   } else {
