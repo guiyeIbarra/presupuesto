@@ -84,7 +84,12 @@ let presup = [
   envio = parseFloat(document.getElementById("envio").value),
   legalizacion = parseFloat(document.getElementById("legalizacion").value),
   ];
-
+  
+/*
+  let ids = [
+    'arancel', 'sellado', 'cedula', 'titulo', 'sugit', 'muni', 'ceroDos', 'ceroCuatro', '31', '12', '08', '59', '13s', 'radic', 'mora', 'rehab', 'ddjj', 'varios', 'h', 'hColega', 'envio', 'legalizacion'
+  ];
+*/
   //utilizamos el método 'reduce' para recorrer el array y sumar sus elementos
   let suma = presup.reduce((a, b) => a + b, 0);
 

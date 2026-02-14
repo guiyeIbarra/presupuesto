@@ -30,6 +30,46 @@
           <div class="row">
             <div class="col-6">                   
               <div id="contacto">
+
+<!---------------------------------------------------------------------->
+
+
+            <label for="jurisdiccion">Jurisdicción Sellado
+              <select id="jurisdiccion" name="jurisdiccion" class="contacto"     onchange="seleccionarJurisdiccion()"> 
+                <option value="BsAs">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="CABA">CABA</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="EntreRios">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="LaPampa">La Pampa</option>
+                <option value="LaRioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquén</option>
+                <option value="RioNegro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="SanJuan">San Juan</option>
+                <option value="SanLuis">San Luis</option>
+                <option value="SantaCruz">Santa Cruz</option>
+                <option value="SantaFe">Santa Fe</option>
+                <option value="SantiagoDelEstero">Santiago del Estero</option>
+                <option value="TierraDelFuego">Tierra del Fuego</option>
+                <option value="Tucuman">Tucumán</option>
+                
+              </select>
+            </label>
+
+            <label for="porcentajeSellado" id="labelPorcentajeSellado" style="display:none;">% Manual Sellado
+            <input type="number" id="porcentajeSellado" name="porcentajeSellado" class="contacto" value="0" step="0.1" oninput="actualizarSelladoManual()"></input>
+        </label>
+
+        <!--------------------------------------------------------------------->
+
                     <label for="cliente">Cliente<input type="text"  id="cliente" name="cliente" class="contacto" value="" autofocus></input></label><br>
 
                     <label for="telefono">Teléfono<input type="phone" id="telefono" name="telefono" class="contacto" value=""></input></label>
@@ -129,7 +169,7 @@
               <tr>
                 <th>59</th>
                 <label for="59"></label>
-                <td><input type="number" id="59" value="5000"/></td>
+                <td><input type="number" id="59" value="6000"/></td>
               </tr>
               <tr>
                 <th>13 x 2</th>
