@@ -17,15 +17,18 @@ function motoAuto() {
   let sug = document.getElementById('sugit');
   let arancelMoto = document.getElementById('valorRegistro').value;
   let selladoMoto = document.getElementById('valorAcara').value;
+  let honoMoto = document.getElementById('h');
 
   totalMoto = arancelMoto * 0.01;
   totalSelladoMoto = selladoMoto * 0.03;
   //arancel.value = totalMoto; 
-  sellado.value = Math.floor(totalSelladoMoto + 1900);
+  sellado.value = Math.floor(totalSelladoMoto + 1000);
   if(totalMoto > 6000) {
     arancel.value = Math.floor(totalMoto);
+    honoMoto.value = 60000;
   } else {
     arancel.value = 6000;
+    honoMoto.value = 50000;
   }
 
   
@@ -41,15 +44,18 @@ function autoMoto() {
   let sug = document.getElementById('sugit');
   let arancelAuto = document.getElementById('valorRegistro').value;
   let selladoAuto = document.getElementById('valorAcara').value;
+  let honoAuto = document.getElementById('h');
 
   totalAuto = arancelAuto * 0.01;
   totalSelladoAuto = selladoAuto * 0.03;
   //arancel.value = totalAuto; 
-  sellado.value = Math.floor(totalSelladoAuto + 1900);
+  sellado.value = Math.floor(totalSelladoAuto + 1000);
   if(totalAuto > 13100) {
     arancel.value = Math.floor(totalAuto);
+    honoAuto.value = 90000;
   } else {
     arancel.value = 13100;
+    honoAuto.value = 80000;
   }
    
    // ced.value = 5290;
