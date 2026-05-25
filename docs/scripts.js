@@ -212,31 +212,30 @@ let TOTAL = suma;
 
 
 
-    doc.text(`Arancel: `, 120, 55), doc.text(`${arancel}`, 170, 55);
-    
-
-    doc.text(`Sellado: `, 120, 65), doc.text(`${sellado}`, 170, 65);
-    doc.text(`Cedula: `, 120, 75), doc.text(`${cedula}`, 170, 75);
-    doc.text(`Título: `, 120, 85), doc.text(`${titulo}`, 170, 85);
-    doc.text(`SUGIT: `, 120, 95), doc.text(`${sugit}`, 170, 95);
-    doc.text(`Municipio: `, 120, 105), doc.text(`${municipio}`, 170, 105);
-    doc.text(`02: `, 120, 115), doc.text(`${ceroDos}`, 170, 115);
-    doc.text(`04: `, 120, 125), doc.text(`${ceroCuatro}`, 170, 125);
-    doc.text(`31: `, 120, 135), doc.text(`${tresUno}`, 170, 135);
-    doc.text(`12: `, 120, 145), doc.text(`${doce}`, 170, 145);
-    doc.text(`08: `, 120, 155), doc.text(`${ceroOcho}`, 170, 155);
-    doc.text(`59: `, 120, 165), doc.text(`${cincoNueve}`, 170, 165);
-    doc.text(`13x2: `, 120, 175), doc.text(`${treces}`, 170, 175);
-    doc.text(`Radicación: `, 120, 185), doc.text(`${radic}`, 170, 185);
-    doc.text(`Mora 08: `, 120, 195), doc.text(`${mora}`, 170, 195);
-    doc.text(`Rehabilitación: `, 120, 205), doc.text(`${rehab}`, 170, 205);
-    doc.text(`DDJJ: `, 120, 215), doc.text(`${ddjj}`, 170, 215);
-    doc.text(`Varios: `, 120, 225), doc.text(`${varios}`, 170, 225);
-    doc.text(`Honorarios: `, 120, 235), doc.text(`${honorarios}`, 170, 235);
-    doc.text(`Honorarios Colega: `, 120, 245), doc.text(`${honorariosColega}`, 170, 245);
-    doc.text(`Envio: `, 120, 255), doc.text(`${envio}`, 170, 255);
-    doc.text(`Legalizacion: `, 120, 265), doc.text(`${legalizacion}`, 170, 265);
-    doc.text(`TOTAL: `, 120, 275), doc.setTextColor(255, 0, 0), doc.setFontSize(14), doc.text(`$ ${TOTAL}`, 170, 275);
+    doc.text(`Arancel: `, 120, 55), doc.text(`${arancel}`, 190, 55, null, null, "right");
+    doc.text(`Sellado: `, 120, 65), doc.text(`${sellado}`, 190, 65, null, null, "right");
+    doc.text(`Cedula: `, 120, 75), doc.text(`${cedula}`, 190, 75, null, null, "right");
+    doc.text(`Título: `, 120, 85), doc.text(`${titulo}`, 190, 85, null, null, "right");
+    doc.text(`SUGIT: `, 120, 95), doc.text(`${sugit}`, 190, 95, null, null, "right");
+    doc.text(`Municipio: `, 120, 105), doc.text(`${municipio}`, 190, 105, null, null, "right");
+    doc.text(`02: `, 120, 115), doc.text(`${ceroDos}`, 190, 115, null, null, "right");
+    doc.text(`04: `, 120, 125), doc.text(`${ceroCuatro}`, 190, 125, null, null, "right");
+    doc.text(`31: `, 120, 135), doc.text(`${tresUno}`, 190, 135, null, null, "right");
+    doc.text(`12: `, 120, 145), doc.text(`${doce}`, 190, 145, null, null, "right");
+    doc.text(`08: `, 120, 155), doc.text(`${ceroOcho}`, 190, 155, null, null, "right");
+    doc.text(`59: `, 120, 165), doc.text(`${cincoNueve}`, 190, 165, null, null, "right");
+    doc.text(`13x2: `, 120, 175), doc.text(`${treces}`, 190, 175, null, null, "right");
+    doc.text(`Radicación: `, 120, 185), doc.text(`${radic}`, 190, 185, null, null, "right");
+    doc.text(`Mora 08: `, 120, 195), doc.text(`${mora}`, 190, 195, null, null, "right");
+    doc.text(`Mora 08: `, 120, 195), doc.text(`${mora}`, 190, 195, null, null, "right");
+    doc.text(`Rehabilitación: `, 120, 205), doc.text(`${rehab}`, 190, 205, null, null, "right");
+    doc.text(`DDJJ: `, 120, 215), doc.text(`${ddjj}`, 190, 215, null, null, "right");
+    doc.text(`Varios: `, 120, 225), doc.text(`${varios}`, 190, 225, null, null, "right");
+    doc.text(`Honorarios: `, 120, 235), doc.text(`${honorarios}`, 190, 235, null, null, "right");
+    doc.text(`Honorarios Colega: `, 120, 245), doc.text(`${honorariosColega}`, 190, 245, null, null, "right");
+    doc.text(`Envio: `, 120, 255), doc.text(`${envio}`, 190, 255, null, null, "right");
+    doc.text(`Legalizacion: `, 120, 265), doc.text(`${legalizacion}`, 190, 265, null, null, "right");
+    doc.text(`TOTAL: `, 120, 275), doc.setTextColor(255, 0, 0), doc.setFontSize(14), doc.text(`$ ${TOTAL}`, 190, 275, null, null, "right");
 
   //manejo de tablas
   //doc.autoTable({html: ".table"});
