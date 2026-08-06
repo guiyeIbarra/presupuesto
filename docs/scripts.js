@@ -84,6 +84,9 @@ function motoAuto() {
 
   let totalMoto = arancelMoto * 0.01;
   let totalSelladoMoto = selladoMoto * tasaSellado;
+
+  let motocicleta = document.getElementById('tipo');
+  motocicleta.value = "motocicleta";
   
   sellado.value = Math.floor(totalSelladoMoto + 1000);
   
