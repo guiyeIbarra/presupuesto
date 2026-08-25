@@ -258,5 +258,5 @@ function genPDF() {
   doc.setFontSize(14); 
   doc.text(`$ ${TOTAL}`, 190, 275, null, null, "right");
 
-  doc.save(`${cliente}.pdf`);
+  doc.save(`${cliente} - ${dominio}.pdf`);
 }
