@@ -90,11 +90,11 @@ function motoAuto() {
   
   sellado.value = Math.floor(totalSelladoMoto + 1000);
   
-  if(totalMoto > 6000) {
+  if(totalMoto > 22500) {
     arancel.value = Math.floor(totalMoto);
     honoMoto.value = 60000;
   } else {
-    arancel.value = 6000;
+    arancel.value = 22500;
     honoMoto.value = 50000;
   }
 }
@@ -115,11 +115,11 @@ function autoMoto() {
   
   sellado.value = Math.floor(totalSelladoAuto + 1000);
   
-  if(totalAuto > 13100) {
+  if(totalAuto > 48000) {
     arancel.value = Math.floor(totalAuto);
     honoAuto.value = 90000;
   } else {
-    arancel.value = 13100;
+    arancel.value = 48000;
     honoAuto.value = 80000;
   }
 }
